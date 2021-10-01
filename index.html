@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://us.123rf.com/450wm/jpgon/jpgon1707/jpgon170700820/81974022-illustration-of-a-long-shadow-round-web-button-with-the-goods-and-service-tax-acronym-gst.jpg?ver=6"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>GST Calculator For Manufacturer-Buyer-Retailer</title>
+  </head>
+  <body>
+    <header id="logo">
+      <img
+        src="https://vyaparwebsiteimages.vypcdn.in/marketing-images/images/gst-calculator-main.png"
+        alt="IndiaGST"
+        width="250px"
+        height="200px"
+      />
+    </header>
+
+    <main>
+      <div class="input">
+        <label for="bill-amount" class="bill-label">
+          <h4>Production Cost</h4>
+          <h4 class="error">Can't be negative</h4>
+        </label>
+        <input id="bill-amount" type="number" min="0" placeholder="0" />
+
+        <label for="number-of-profit" class="number-of-profit">
+          <h4>Profit In %</h4>
+          <h4 class="error">Can't be zero</h4>
+        </label>
+        <input
+          id="number-of-profit"
+          type="number"
+          value="1"
+          min="1"
+          placeholder="0"
+        />
+
+        <div class="tax-container">
+          <h4>Select GST Tax Slab %</h4>
+
+          <div class="taxs">
+            <button type="number" class="tax unselected" value="5">5%</button>
+            <button type="number" class="tax unselected" value="12">12%</button>
+            <button type="number" class="tax unselected" value="18">18%</button>
+            <button type="number" class="tax unselected" value="28">28%</button>
+            <button type="number" class="tax unselected" value="32">32%</button>
+            <input type="number" placeholder="custom" class="custom" min="1" />
+          </div>
+        </div>
+      </div>
+
+      <div class="results">
+        <div>
+          <div class="total">
+            <div class="total-headings">
+              <p>Total Selling Prize</p>
+            </div>
+            <p class="total-bill-amount">₹0.00</p>
+          </div>
+
+          <div class="tax-amount">
+            <div class="tax-amount-headings">
+              <p>Tax Amount</p>
+            </div>
+            <p class="tax-total-amount">₹0.00</p>
+          </div>
+
+          <div class="total">
+            <div class="total-headings">
+              <p>CGST</p>
+            </div>
+            <p class="total-bill-amount" id="CGST">₹0.00</p>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="total-headings">
+            <p>SGST</p>
+          </div>
+          <p class="total-bill-amount" id="SGST">₹0.00</p>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </main>
+
+    <!-- js -------------------->
+    <script  src="./javascript/script.js"></script>
+  </body>
+</html>
