@@ -1,6 +1,6 @@
 # KnowYourGST
 ## Resposive GST caculator web application.
-## It will be helpful for Manufacturer, wholesaler & retailer to calculate the GST and selling prize of the product.
+## It will be helpful for manufacturer, wholesaler & retailer to calculate the GST and selling prize of the product.
 ## ***Click on the link to check the application*** (https://amol4641.github.io/KnowYourGST/)
 * Tried to implement the concept of data binding which will help to calculate results for variable product cost input.
   
