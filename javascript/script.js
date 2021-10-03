@@ -83,6 +83,8 @@ resetBtn.addEventListener("click", () => {
 
   totalTaxAmount.innerText = "₹0.00";
   totalBillAmount.innerText = "₹0.00";
+  document.getElementById("CGST").innerText=`₹${(0)}`;
+  document.getElementById("SGST").innerText=`₹${(0)}`;
 
   taxBtn.forEach((e) => {
     if (e.classList.contains("selected")) e.classList.remove("selected");
